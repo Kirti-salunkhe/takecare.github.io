@@ -1,0 +1,173 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="css\bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+		<script>
+		function check()
+		{
+			with(document.forms.abc)
+			{
+				 name=n.value
+				age=parseInt(age.value)
+				w=weight.value
+				h=height.value
+				
+				bmi=(w*12) / (h*h)
+				 if(n.value=="" || age.value=="" || addr.value=="" || phone.value=="" || gmail.value=="" || bl.value=="" ||height.value=="" || 						weight.value==""|| sugar.value=="" || bp.value=="")
+				{
+					alert("All fields are required")
+				}
+				else
+				{	
+					document.write("<body bgcolor='pink'>")
+					document.write("<h2>Personal Information</h2><br>")
+					document.write("<p style='font-size:18px; font-family:Verdana;' class='text-justify'>")
+					document.write("Name : "+name+"<br>"+"age: "+age.value+"<br>Address: "+addr.value+"<br>Phone No: 							"+phone.value+"<br>Gmail: "+gmail.value)
+					document.write("<br></p>")
+
+					document.write("<h2>Medical Information</h2><br>")
+					document.write("<p style='font-size:18px; font-family:Verdana;' class='text-justify'>")
+					document.write("Blood group : "+bl.value+"<br>"+"Height: "+height.value+"feet"+"<br>Weight: "+weight.value							+"kg"+"<br>Sugar level: "+sugar.value+"mg/dL"+"<br>Blood pressure: "+bp.value+"mmhg")
+					document.write("<br></p>")
+
+					document.write("<h2>Your  medical report</h2><br>")
+					document.write("<p style='font-size:18px; font-family:Verdana;' class='text-justify'>")
+					document.write("BMI: "+bmi)
+					if(bmi < 18.5)
+					{
+						document.write("<br>Underweight")
+					}
+					else if(bmi >=18.5 && bmi<=24.9)
+					{
+						document.write("<br>Normal or Healthy Weight")
+					}
+					else if (bmi >=25.0 && bmi<=29.9)
+					{
+						document.write("<br>Overweight")
+					}
+					else
+					{
+						document.write("<br>Obese")
+					}
+					
+
+					document.write("<br>Blood pressure: "+bp.value+"mmhg")
+					if(bp.value >=90 && bp.value <=120)
+					{
+						document.write("<br>Normal Blood pressure")
+					}
+					else if(bp.value>=140)
+					{
+						document.write("<br>Higher blood pressure")
+					}
+					else if (bp.value<90)
+					{
+						document.write("<br>lower blood pressure")
+					}
+					document.write("<br>Sugar level: "+sugar.value+"mg/dL")
+					if(sugar.value <=140)
+					{
+						document.write("<br>Normal sugar level")
+					}
+					else if(sugar.value >=140 && sugar.value <=199)
+					{
+						document.write("<br>Not high sugar level but it indicate predibetes")
+					}
+					else
+					{
+						document.write("<br>High sugar level")
+					}
+					document.write("<br></p>")
+					document.write("</body>")
+					
+					
+				}
+			}
+		}
+	</script>
+	</head>
+	
+<body>
+
+	<div class="container-fluid">
+		<div class="row header2">
+			<div class=" col-sm-3">
+				 <img src="logo3.png" width="350" height="200">
+			</div>
+			<div class="offset-sm-3 col-sm-6 ">
+			<h1 style="font-family:Georgia; color:00288b;"> Healthcare Takecare</h1>
+			
+			</div>
+		</div>
+	</div><br><br>
+	<div class="container">
+		<div class="row">
+			
+			<div class="offset-sm-2 col-sm-4">
+				<h3>Personal Information</h3>
+					<form name="abc">
+					<div class="form-group">
+					<lable>Name</lable>
+					<input type="text" class="form-control" name="n">
+					</div>
+					
+					<div class="form-group">
+					<lable>age</lable></br>
+					<input type="number" class="form-control" name="age">
+					</div>
+					
+					<div class="form-group">
+					<lable>Address</lable>
+					<input type="text" class="form-control" name="addr">
+					</div>
+
+					<div class="form-group">
+					<lable>Phone no</lable>
+					<input type="text" class="form-control" name="phone">
+					</div>
+					
+					<div class="form-group">
+					<lable>Gmail</lable>
+					<input type="text" class="form-control" name="gmail">
+					</div>
+			</div>
+				
+		
+			<div class="offset-sm-1 col-sm-4">
+					<h3>Medical Information</h3>
+					<div class="form-group">
+					<lable>Blood Group</lable>
+					<input type="text" class="form-control" name="bl">
+					</div>
+						
+					<div class="form-group">
+					<lable>Height</lable>
+					<input type="number" class="form-control" name="height">
+					</div>
+
+					<div class="form-group">
+					<lable>Weight</lable>
+					<input type="number" class="form-control" name="weight">
+					</div>
+					
+					<div class="form-group">
+					<lable>Suger level</lable>
+					<input type="number" class="form-control" name="sugar">
+					</div>
+			
+					<div class="form-group">
+					<lable>Blood pressure</lable>
+					<input type="number" class="form-control" name="bp">
+					</div>
+			</div>
+			<div class="w-100"></div>
+			<div class="offset-sm-6 "><br><br><br><button type="submit" class="btn btn-success" onclick="check()" 			style="">Submit</button></div><br><br><br>
+			</form>
+		</div>
+	</div><br><br><br>
+
+	<script  src="js\jquery.js"></script>
+	<script src="js\bootstrap.min.js"></script>
+</body>
+</html>

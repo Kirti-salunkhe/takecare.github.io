@@ -1,0 +1,54 @@
+.header{
+	background-image:url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm208-jj-14_1.jpg?auto=format&bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1400&s=2d2b78ace35012c7166a892bf08d68e3");
+	background-repeat: no-repeat;
+	opacity:0.8;
+	
+
+}
+.header2{
+background-color:#dee7ec;
+
+
+}
+.box{
+color:white;
+padding:10%;
+
+}
+.box1{
+border:3px 1px solid black;
+font-size:16px;
+font-family:Verdana;
+color:#800040;
+}
+.box2{
+border:3px 1px solid black;
+font-size:16px;
+font-family:Verdana;
+
+}
+.box4{
+background-color:003366;
+color:ffffff;
+padding:10px;
+color:;
+}
+.footer{
+background-color:#2f5167;
+font-size:17px;
+padding:20px;
+height:25%;
+color:white;
+}
+figure {
+    display: inline-block;
+    margin: 50px; 
+}
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+   font-family:Verdana;
+
+    text-align: center;
+}

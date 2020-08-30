@@ -1,0 +1,242 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="css\bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+		<script>
+			function check()
+			{
+				with(document.forms.abc)
+				{
+					if(na.value=="" || pa.value=="")
+					{
+						alert("All fields are required")
+						
+					}
+					else
+					{
+						if(pa.value.length==6)
+						{
+							window.location = 'welcome.html';
+						}
+						else
+						{
+							alert("Wrong password!!! Password must be 6 digit")
+						}
+
+					}
+				}
+			
+			}
+
+			
+			function verify()
+			{
+				with(document.forms.cba)
+				{	
+					plen=pass.value.length
+					p=parseInt(plen)
+					if(nam.value=="" || pass.value==""|| conf.value=="")
+					{
+						alert("All fields are required")
+						
+					}
+					else
+					{	
+						if(pass.value == conf.value)
+						{	
+							if(p==6)
+							{
+								window.location = 'welcome.html';
+							}
+							else
+							{
+								alert("Password must be 6 digit")
+							}
+						}
+						else
+						{
+							alert("Password and Conform Password not match")				
+						}
+					}
+				}
+			
+			}
+
+			
+		</script>
+	</head>
+	
+<body>
+		
+		<div class="container-fluid ">
+				<div class="row header2">
+					<div class="col-sm-4">
+					  <img src="logo3.png" width="370" height="200">
+						
+					</div>
+					<div class="col-sm-8 ">
+						<h1 style="font-family:Georgia; padding:3px; color:00288b">Welcome to Healthcare 									Takecare</h1><br><br><br>
+					
+					<div class="row box1" >
+						<div class="offset-sm-4 col-sm-2"><a href="https://www.betterhealth.vic.gov.au/health/ten-tips/10-tips-to-						exercise-safely">Exercise</a></div>
+					<div class="col-sm-2"><a href="https://www.healthline.com/nutrition/how-to-lose-weight-as-fast-as-possible"> 								Weight lose </a></div>
+						<div class="col-sm-2"><a href="https://www.realbuzz.com/articles-interests/fitness/article/top-tips-for-yoga-beginners">Yoga tips</a></div>
+						<div class="col-sm-2"><a href="https://www.cdc.gov/healthyweight/healthy_eating/index.html" >Healthy 						Diet</a></div>
+					</div>
+					</div>
+					
+				
+		</div>
+			
+		</div>
+		<div class="container-fluid ">
+			<div class="row header box">
+				<div class="col-sm-5 ">
+					<h2>Login Here</h2>
+					<form name="abc" action="">
+					<div class="form-group">
+						<lable>Username</lable>
+						<input type="text" name="na" class="form-control ">
+					</div>
+					<div class="form-group">
+						<lable>Password</lable>
+						<input type="password" name="pa" class="form-control">
+					</div>
+					<input type="button" class="btn btn-success" onclick="check()" value="Submit">
+					</form>
+				</div>	
+			</div>
+		</div>
+		<div class="container-fluid box4">
+			<div class="row">
+				<div class="offset-sm-1 col-sm-1 "><b>Home</b></div></b>
+				<div class=" col-sm-1"><b><a href="about_me.html" style="color:white;">About Us</a></b></div>
+				<div class=" col-sm-1"><b>Contact </b></div>
+				<div class=" col-sm-1"><b>FAQ's</b></div>
+			</div>
+		</div><br><br><br>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 box2">
+					<form name="cba">
+					<h3>Create your account</h3><br>
+					<div class="form-group">
+						<lable>Username</lable>
+						<input type="text" name="nam" class="form-control ">
+					</div>
+					<div class="form-group">
+						<lable>Password</lable>
+						<input type="password" name="pass" class="form-control">
+					</div>
+					<div class="form-group">
+						<lable>Conform Password</lable>
+						<input type="password" name="conf" class="form-control">
+					</div>
+					<input type="button" class="btn btn-success" onclick="verify()" value="Submit">
+					</form>
+				</div>
+				
+		<div class="col-sm-8">
+			<font size="6" color="red">Top 5 viruses in the world</font>
+			<table  class="table text-justify" >
+			<tbody>
+			<tr>
+				<td><a href="https://www.who.int/news-room/fact-sheets/detail/marburg-virus-disease"><img src="https://encrypted-						tbn0.gstatic.com/images?q=tbn%3AANd9GcQ_qG5QvsLj6clL7LsZKP1Ne6McAT_F5Lqd0T3oavorW12547_4&usqp=CAU" 				width="250" height="150" ></a></td>		
+				<td><b><font size="5">Marburg virus</font></b><br><p>Scientists identified Marburg virus in 1967, when small outbreaks 					occurred among lab workers in Germany who were exposed to infected monkeys imported from Uganda. It is similar 				to Ebola in that both can cause hemorrhagic fever, people develop high fevers and bleeding throughout 					the body that can lead to shock, organ failure and death.</td>
+			</tr>
+			<tr>
+				<td><a href="https://www.who.int/news-room/fact-sheets/detail/ebola-virus-disease"><img    src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/ebola_slideshow/thinkstock_rf_illustration_of_ebola_virus.jpg?resize=375:*"  width="250" height="150" ></a></td>  		
+		<td><font size="5"><b>Ebola virus</b></font><br><p>The first known Ebola outbreaks in humans struck simultaneously in the Republic of the Sudan and the Democratic Republic of Congo in 1976. Ebola is spread through contact with blood or other body fluids, or tissue from infected people or animals. </td>
+	</tr>
+	
+	<tr>
+		<td><a href="https://en.wikipedia.org/wiki/HIV/AIDS"><img src="https://www.scitecheuropa.eu/wp-content/uploads/2019/08/HIV.jpg" width="250" height="150"></a></td>
+
+		<td><font size="5"><b>HIV virus</b></font><br><p>In the modern world, the deadliest virus of all may be HIV. "It is still the one that is the biggest killer," said Dr. Amesh Adalja, an infectious disease physician and spokesman for the Infectious Disease Society of America.An estimated 32 million people have died from HIV since the disease was first recognized in the early 1980s.</td>
+		
+	</tr>	
+
+	<tr>
+		<td><a href="https://www.mayoclinic.org/diseases-conditions/flu/symptoms-causes/syc-20351719"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTrm8YkIHZk2q4svLvJFvrc3J3IxWekIjbb_WQQFueZ0KFBZtGh&usqp=CAU" width="250" height="150"></a></td>
+		<td><font size="5"><b>Influenza</b></font><br><br>During a typical flu season, up to 500,000 people worldwide will die from the illness, according to WHO. But occasionally, when a new flu strain emerges, a pandemic results with a faster spread of disease and, often, higher mortality rates.
+	</tr>
+
+	<tr>
+		<td><a href="https://www.who.int/news-room/fact-sheets/detail/middle-east-respiratory-syndrome-coronavirus-(mers-cov)"><img src="https://www.news-medical.net/image.axd?picture=2017%2F2%2FMERS-CoV.jpg" width="250" height="150"></a></td>
+		<td><font size="5"><b>MERS-CoV </b></font><br>The virus that causes Middle East respiratory syndrome, or MERS, sparked an outbreak in Saudi Arabia in 2012 and another in South Korea in 2015. The MERS virus belongs to the same family of viruses as SARS-CoV and SARS-CoV-2, and likely originated in bats, as well. </td>
+	</tr>
+	</tbody></table>
+				</div>
+			</div><br><br>
+
+		<div class="row">
+			<center><div class="col-sm-8">
+				<br><br><font size="5" style="font-family:Georgia;"><b>COVID-19</b></font><br><br>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/SARS-CoV-2_without_background.png/220px-SARS-				CoV-2_without_background.png" width="200" height="200">
+			<p class="text-justify"><font color="#2B3856">Coronaviruses are a group of related RNA viruses that cause diseases in mammals and birds. In humans, 			these viruses cause respiratory tract infections that can range from mild to lethal. Mild illnesses include some cases of the common cold 			(which is also caused by other viruses, predominantly rhinoviruses), while more lethal varieties can cause SARS, MERS, and COVID-19. 			Symptoms in other species vary: in chickens, they cause an upper respiratory tract disease, while in cows and pigs they cause diarrhea. 			There are as yet no vaccines or antiviral drugs to prevent or treat human coronavirus infections. <br><br>Seven coronaviruses can infect 			humans. The one that causes SARS emerged in southern China in 2002 and quickly spread to 28 other countries. More than 8,000 people 			were infected by July 2003, and 774 died. A small outbreak in 2004 involved only four more cases. This coronavirus causes fever, 			headache, and respiratory problems such as cough and shortness of breath.</font></p><br><br>
+
+			</div></center>
+			<div class="w-100"></div>
+		
+			<div class="col-sm-12">
+			<figure><a href="https://en.wikipedia.org/wiki/Coronavirus"><img src="https://www.pharmaceutical-business-review.com/wp-content/uploads/2020/02/Corona.png" width="150" height="150"></a><figcaption>Native place</figcaption></figure>
+			
+		
+			<figure><a href="https://economictimes.indiatimes.com/news/politics-and-nation/coronavirus-the-four-stages-of-a-global-pandemic/pandemic/slideshow/74884293.cms"><img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/business-success-495279.png" width="150" height="150"></a><figcaption>Stages</figcaption></figure>
+			
+			<figure><a href="selfTest.html"><img src="https://clipartart.com/images/google-images-clip-art-9.png"width="150" height="150"></a><figcaption>Self Test</figcaption></figure>
+
+			<figure><a href="https://www.nature.com/articles/d41586-020-00965-x"><img src="https://cdn.pixabay.com/photo/2020/04/03/11/55/world-4998557_960_720.png" width="175" height="160"></a><figcaption>Effect on the Earth</figcaption></figure>
+	
+
+			</div>
+			<div class="w-100"></div>
+	<div class="col-12">
+
+
+<br><br><br><table class="table text-justify table-borderless "cellspacing="100" cellpadding="80" bgcolor="#dee7ec" >
+	<tr>
+		<td><img src="https://cdn.clipart.email/f687e7cf967990d5a65fde48400b2c89_hand-washing-clip-art-at-clkercom-vector-clip-art-online-_298-273.png" width="150" height="150" ></td>
+		<td>Handwashing with soap removes germs from hands. This helps prevent infections because: People frequently touch their eyes, nose, and mouth without even realizing it. ... Removing germs through handwashing</td>
+<td><img src="https://cdn4.iconfinder.com/data/icons/stop-virus-outline-iconset/128/ic_distancing-512.png" width="150" height="150"></td>
+
+	
+		<td>Social distancing puts space between people. When people who are infected with the virus stay away from others, they can't pass it to anyone else. This way, fewer people get sick at the same time.</td>
+	</tr>
+	
+		
+	
+		<td><img src="https://cdn4.iconfinder.com/data/icons/coronavirus-glyph/64/mask-wearing-doctor-protection-flu-512.png" width="150" height="150"> </td><td>Wear a mask if you are coughing or sneezing. Masks are effective only when used in combination with frequent hand-cleaning with alcohol-based hand rub or soap and water. If you wear a mask, then you must know how to use it and dispose of it properly.</td>
+	
+	
+		<td><img src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v871-katie-07.png?auto=&bg=transparent&con=3&cs=srgb&dpr=1&fm=png&ixlib=php-3.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1400&s=6a15c89e4819235a67ef29af6a609d39" width="150" height="150" ></td>
+		<td>Stay at home to protect others, and use these strategies to keep life as normal as possible.</td>
+	
+	</table></div>
+
+		</div>
+		
+	</div><br><br><br><br>
+	
+
+	<div class="container-fluid">
+		<div class="row footer">
+			<div class="offset-sm-1 col-sm-1"><a href="about_me.html" style="color:white;">About</a> </div>
+			<div class="col-sm-1">Blog</div>
+			<div class="col-sm-1">Event</div>
+			<div class="col-sm-1">Contact </div>
+			
+			<div class="offset-sm-3 col-sm-3">Follow us&nbsp&nbsp
+			<a href="https://instagram.com/kirti_salunkhe_5"><img src="https://www.transparentpng.com/thumb/logo-instagram/JFyofc-logo-instagram-background-png.png" width="35" height="35"></a>&nbsp&nbsp&nbsp&nbsp
+<a href="https://api.whatsapp.com/send?phone=+8329475487"><img src="https://pngimg.com/uploads/whatsapp/whatsapp_PNG21.png"width="30" height="30"></a>&nbsp&nbsp&nbsp&nbsp
+<a href="mailto:kirtisalunkhe15@gmail.com?"><img src="https://www.freeiconspng.com/uploads/gmail-logo-icon-7.png" width="30" height="30"></a>
+			</div>
+		</div>
+	</div>
+		
+		<script  src="js\jquery.js"></script>
+		<script src="js\bootstrap.min.js"></script>
+	
+</body>
+</html>

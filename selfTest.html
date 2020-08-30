@@ -1,0 +1,90 @@
+<html>
+<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="css\bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+</head>
+<script>
+	function check()
+	{	
+		with(document.forms.abc)
+		{	
+			if( (cough.checked==true || fever.checked==true || breath.checked==true || none.checked==true) && (dia.checked==true || 					hyper.checked==true || lung.checked==true|| heart.checked==true||non.checked==true) && (yes.checked==true||no.checked==true) )
+			{
+
+				if(cough.checked==true || fever.checked==true || breath.checked==true)
+					alert("You need to checkup")
+				else if(dia.checked==true || hyper.checked==true || lung.checked==true|| heart.checked==true)
+					alert("You need to be more carefull")
+				else if(none.checked==true||non.checked==true|| no.checked==true)
+					alert("You are safe")
+				else if(yes.checked==true)
+					alert("You need to be quarantine itself")
+				
+					
+			}
+			else
+			{
+				alert("It necessary to answer all the questions")
+			}
+			
+			
+			
+		}
+	}
+</script>
+
+<body>
+	
+	<div class="container-fluid">
+		<div class="row header2">
+			<div class=" col-sm-3">
+				 <img src="logo3.png" width="350" height="200">
+			</div>
+			<div class="offset-sm-3 col-sm-6 ">
+			<h1 style="font-family:Georgia; color:00288b;"> Healthcare Takecare</h1><br>
+			<h2 style="font-family:Georgia; color:00288b;">Covid-19 Self Test</h2>
+			</div>
+		</div>
+	</div><br><br><br>	
+	<div class="container">
+		<font size="5" color="red">Please note that folowing information will be used for monitoring and management of the current health crisis and fight against 			COVID-19.</font><p><br>
+		<div class="row">
+			<div class="col-sm-8">
+			<font size="4" ><form name="abc">
+				<div class="form-group">
+					<lable>Are you exprience any of the following symptoms?</lable><br>
+					<input type="checkbox" name="cough" > Cough<br>
+ 					<input type="checkbox" name="fever" > Fever<br>
+ 					<input type="checkbox" name="breath" > Difficulty in Breathing<br>
+ 					<input type="checkbox" name="none" > None of the above
+				</div>
+				
+				<div class="form-group">
+					<lable>Have you ever had any of the following:</lable><br>
+					 <input type="checkbox" name="dia"> Diabetes<br>
+					 <input type="checkbox" name="hyper"> Hypertension<br>
+					 <input type="checkbox" name="lung"> Lung Disease<br>
+ 					<input type="checkbox" name="heart"> Heart Disease<br>
+					<input type="checkbox" name="non"> None of the above
+				</div>
+			
+				<div class="form-group">
+					<lable>Have you traveled anywhere  internationally in the last 14 years?</lable><br>
+					<input type="checkbox" name="yes"> Yes<br>
+					<input type="checkbox" name="no"> No
+				</div>
+			
+				<button type="submit"  class="btn btn-primary" onclick="check()">Submit</button>
+
+			</form></font>
+
+			</div>
+		</div>
+	</div>
+
+<br><br><br>
+	<script  src="js\jquery.js"></script>
+	<script src="js\bootstrap.min.js"></script>
+</body>
+</html>
